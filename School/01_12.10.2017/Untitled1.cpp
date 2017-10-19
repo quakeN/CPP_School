@@ -1,5 +1,7 @@
 #include <iostream>
 #include <cstdlib>
+#include <algorithm>
+
 
 using namespace std;
 
@@ -13,32 +15,31 @@ int main()
 	
 	int array[n];
 
-	for (int i = 1; i <= n; i++)
+	for (int i = 0; i < n; i++)
 	{
-	 array[i] = i;
+	 array[i] = i + 1;
 	}
 	cout << "Before change: ";
- 	for (int i = 1; i <= n; i++)
+ 	for (int i = 0; i < n; i++)
 	{
 	 cout << array[i] << " ";
+	 
 	}
+	cout << endl;
 	cout << "After change: ";
-
-	for (int i = 1; i <= k; i++)
+	for (int i = 0; i < k; i++)
 	{
-		int temp = 0;
-    	temp = array[i];
-    	array[i] = array[n];
-    	array[n] = temp;
+		swap(array[i], array[n-1]);
+  		n--;
 	}
-
-	for (int i = 1; i <= n; i++)
+	for (int i = 0; i < n; i++)
 	{
 	 cout << array[i] << " ";
+
 	}
-    
-   
 	
+	cout << endl;
 	system("pause");
 	return 0;
 }
+
