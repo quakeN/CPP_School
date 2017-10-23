@@ -15,12 +15,14 @@ int main()
 
 	for (int i = 0; i < n; i++)
 	{
-	 array[i] = i + 1;
+	 	array[i] = i + 1;
 	}
+	
 	cout << "Before change: ";
+	
  	for (int i = 0; i < n; i++)
 	{
-	 cout << array[i] << " ";
+		cout << array[i] << " ";
 	}
 	cout << endl;
 	cout << "After change: ";
@@ -31,10 +33,11 @@ int main()
 	}
 	for (int i = 0; i < n + k; i++)
 	{
-	 cout << array[i] << " ";
+	 	cout << array[i] << " ";
 	}
 
 	cout << endl;
+	
 	system("pause");
 	return 0;
 }
