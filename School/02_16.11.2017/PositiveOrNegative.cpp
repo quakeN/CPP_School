@@ -10,11 +10,11 @@ int main()
 	cin >> num;
 	if (num >= 0)
 	{
-		cout << "Polojitelno" << endl;
+		cout << "Positive number." << endl;
 	}
 	else
 	{
-		cout << "Otricatelno" << endl;
+		cout << "Negative number." << endl;
 	}
 	
 	system("pause");
