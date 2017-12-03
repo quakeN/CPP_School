@@ -11,7 +11,8 @@ int main()
 	cout << "Enter day: ";
 	cin >> day;
 
-	//TODO
+	switch(month)
+	case "January": cout << "xd"; break;
 
 	system("pause");
 	return 0;
