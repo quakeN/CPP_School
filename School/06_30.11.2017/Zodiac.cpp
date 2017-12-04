@@ -11,8 +11,8 @@ int main()
 	cout << "Enter day: ";
 	cin >> day;
 
-	switch(month)
-	case "January": cout << "xd"; break;
+	if (month == 1)
+		cout << "January" << endl;
 
 	system("pause");
 	return 0;
