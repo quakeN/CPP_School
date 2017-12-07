@@ -19,6 +19,7 @@ int main()
 				case 1: cout << "Goalkeeper" << endl; break;
 				case 2: case 3: case 4: cout << "Defender" << endl; break;
 				case 5: case 6: case 7: case 8: cout << "Half-back" << endl; break;
+				default: cout << "Attacker" << endl; break;
 			}
 	}
    	system("pause");
