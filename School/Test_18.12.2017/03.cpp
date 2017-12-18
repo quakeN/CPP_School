@@ -12,7 +12,7 @@ int main()
 
 	switch(month)
 	{
-	case 1:
+    case 1:
 		if(day > 31)
 			cout << "Invalid day" << endl;
 		else if (day < 31)
